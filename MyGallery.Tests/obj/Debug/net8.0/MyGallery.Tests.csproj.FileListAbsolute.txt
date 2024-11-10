@@ -96,3 +96,4 @@
 /Users/burak/Desktop/Project/MyGalleryService/MyGallery.Tests/obj/Debug/net8.0/MyGallery.Tests.pdb
 /Users/burak/Desktop/Project/MyGalleryService/MyGallery.Tests/obj/Debug/net8.0/MyGallery.Tests.genruntimeconfig.cache
 /Users/burak/Desktop/Project/MyGalleryService/MyGallery.Tests/obj/Debug/net8.0/ref/MyGallery.Tests.dll
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Tests/obj/Debug/net8.0/MyGallery.Tests.sourcelink.json

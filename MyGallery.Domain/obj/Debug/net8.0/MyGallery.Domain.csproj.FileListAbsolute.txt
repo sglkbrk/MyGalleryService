@@ -9,3 +9,4 @@
 /Users/burak/Desktop/Project/MyGalleryService/MyGallery.Domain/obj/Debug/net8.0/refint/MyGallery.Domain.dll
 /Users/burak/Desktop/Project/MyGalleryService/MyGallery.Domain/obj/Debug/net8.0/MyGallery.Domain.pdb
 /Users/burak/Desktop/Project/MyGalleryService/MyGallery.Domain/obj/Debug/net8.0/ref/MyGallery.Domain.dll
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Domain/obj/Debug/net8.0/MyGallery.Domain.sourcelink.json

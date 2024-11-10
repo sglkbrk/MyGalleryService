@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyGallery.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7aaaf3e63f5a32954f84a9ae276e92e5b12e4cd2")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyGallery.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyGallery.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

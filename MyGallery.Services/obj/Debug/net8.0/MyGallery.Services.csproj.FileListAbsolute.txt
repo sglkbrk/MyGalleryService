@@ -15,3 +15,4 @@
 /Users/burak/Desktop/Project/MyGalleryService/MyGallery.Services/obj/Debug/net8.0/refint/MyGallery.Services.dll
 /Users/burak/Desktop/Project/MyGalleryService/MyGallery.Services/obj/Debug/net8.0/MyGallery.Services.pdb
 /Users/burak/Desktop/Project/MyGalleryService/MyGallery.Services/obj/Debug/net8.0/ref/MyGallery.Services.dll
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Services/obj/Debug/net8.0/MyGallery.Services.sourcelink.json
