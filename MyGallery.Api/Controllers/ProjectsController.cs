@@ -114,7 +114,7 @@ namespace MyGallery.Api.Controllers
                 // JPEG formatında kalite ayarıyla kaydet
                 var encoder = new JpegEncoder
                 {
-                    Quality = 75 // Kalite oranını ayarla (0-100 arası, 75 genelde iyi bir oran)
+                    Quality = 70 // Kalite oranını ayarla (0-100 arası, 75 genelde iyi bir oran)
                 };
 
                 // Bellekte bir stream aç
