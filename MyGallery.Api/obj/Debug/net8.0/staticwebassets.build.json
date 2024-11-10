@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "gZy7wh8/9PXVlnRjKUDA2mBjRJaJVY+brO/P/BnJJtY=",
+  "Source": "MyGallery.Api",
+  "BasePath": "_content/MyGallery.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MyGallery.Api/wwwroot",
+      "Source": "MyGallery.Api",
+      "ContentRoot": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Api/wwwroot/",
+      "BasePath": "_content/MyGallery.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Api/wwwroot/index.html",
+      "SourceId": "MyGallery.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Api/wwwroot/",
+      "BasePath": "_content/MyGallery.Api",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    },
+    {
+      "Identity": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Api/wwwroot/script.js",
+      "SourceId": "MyGallery.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Api/wwwroot/",
+      "BasePath": "_content/MyGallery.Api",
+      "RelativePath": "script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/script.js"
+    },
+    {
+      "Identity": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Api/wwwroot/style.css",
+      "SourceId": "MyGallery.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Api/wwwroot/",
+      "BasePath": "_content/MyGallery.Api",
+      "RelativePath": "style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/style.css"
+    }
+  ]
+}

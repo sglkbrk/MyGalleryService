@@ -1,0 +1,17 @@
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/obj/Debug/net8.0/MyGallery.Data.csproj.AssemblyReference.cache
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/obj/Debug/net8.0/MyGallery.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/obj/Debug/net8.0/MyGallery.Data.AssemblyInfoInputs.cache
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/obj/Debug/net8.0/MyGallery.Data.AssemblyInfo.cs
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/obj/Debug/net8.0/MyGallery.Data.csproj.CoreCompileInputs.cache
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/bin/Debug/net8.0/MyGallery.Data.deps.json
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/bin/Debug/net8.0/MyGallery.Data.runtimeconfig.json
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/bin/Debug/net8.0/MyGallery.Data.dll
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/bin/Debug/net8.0/MyGallery.Data.pdb
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/bin/Debug/net8.0/MyGallery.Domain.dll
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/bin/Debug/net8.0/MyGallery.Domain.pdb
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/obj/Debug/net8.0/MyGaller.5E91899E.Up2Date
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/obj/Debug/net8.0/MyGallery.Data.dll
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/obj/Debug/net8.0/refint/MyGallery.Data.dll
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/obj/Debug/net8.0/MyGallery.Data.pdb
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/obj/Debug/net8.0/MyGallery.Data.genruntimeconfig.cache
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/obj/Debug/net8.0/ref/MyGallery.Data.dll

@@ -1,0 +1,223 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Services/MyGallery.Services.csproj": {}
+  },
+  "projects": {
+    "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/MyGallery.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/MyGallery.Data.csproj",
+        "projectName": "MyGallery.Data",
+        "projectPath": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/MyGallery.Data.csproj",
+        "packagesPath": "/Users/burak/.nuget/packages/",
+        "outputPath": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/burak/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Domain/MyGallery.Domain.csproj": {
+                "projectPath": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Domain/MyGallery.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Domain/MyGallery.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Domain/MyGallery.Domain.csproj",
+        "projectName": "MyGallery.Domain",
+        "projectPath": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Domain/MyGallery.Domain.csproj",
+        "packagesPath": "/Users/burak/.nuget/packages/",
+        "outputPath": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/burak/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Services/MyGallery.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Services/MyGallery.Services.csproj",
+        "projectName": "MyGallery.Services",
+        "projectPath": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Services/MyGallery.Services.csproj",
+        "packagesPath": "/Users/burak/.nuget/packages/",
+        "outputPath": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Services/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/burak/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/MyGallery.Data.csproj": {
+                "projectPath": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Data/MyGallery.Data.csproj"
+              },
+              "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Domain/MyGallery.Domain.csproj": {
+                "projectPath": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Domain/MyGallery.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.7.405.7, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyGallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .form-container {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      max-width: 600px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .form-group button {
+      background-color: #5cb85c;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .form-group button:hover {
+      background-color: #4cae4c;
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .checkbox-group input {
+      margin-right: 10px;
+    }
+
+    .separator {
+      margin: 20px 0;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body id="projetApp">
+  <h1>Fotoğraf Yükleme</h1>
+  
+  <div class="form-container">
+    <form id="uploadForm" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="file">Fotoğraf Seçin:</label>
+        <input type="file" name="file" id="file" required />
+      </div>
+      <div class="form-group">
+        <label for="projectsId">Proje ID:</label>
+        <select name="projectsId" id="projectsId" required>
+          <option value="">Proje ID Seçin</option>
+          <!-- Proje ID'leri buraya eklenecek -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="title">Başlık:</label>
+        <input type="text" name="title" placeholder="Başlık" required />
+      </div>
+      <div class="form-group">
+        <label for="subtitle">Alt Başlık:</label>
+        <input type="text" name="subtitle" placeholder="Alt Başlık" />
+      </div>
+      <div class="form-group">
+        <label for="description">Açıklama:</label>
+        <textarea type="text" rows="5" cols="50" name="description" placeholder="Açıklama" >
+
+        </textarea>
+      </div>
+      <div class="form-group">
+        <label for="location">Konum:</label>
+        <input type="text" name="location" placeholder="Konum" />
+      </div>
+      <div class="form-group">
+        <label for="city">Şehir:</label>
+        <input type="text" name="city" placeholder="Şehir" />
+      </div>
+      <div class="form-group">
+        <label for="category">Kategori:</label>
+        <select name="category" required>
+          <option value="">Kategori Seçin</option>
+          <option value="0">Portrait</option>
+          <option value="1">Landscape</option>
+          <option value="2">Food</option>
+          <option value="3">Nature</option>
+          <option value="4">Night</option>
+          <option value="5">Travel</option>
+          <option value="6">Street</option>
+          <option value="7">City and Architecture</option>
+          <option value="8">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="photographer">Fotoğrafçı:</label>
+        <input type="text" name="photographer" placeholder="Fotoğrafçı" />
+      </div>
+      <div class="form-group">
+        <button type="submit">Fotoğraf Yükle</button>
+      </div>
+    </form>
+
+    <div class="separator">--- veya ---</div>
+
+    <form id="uploadProject" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="file">Proje Fotoğrafı Seçin:</label>
+        <input type="file" name="file" id="file" required />
+      </div>
+      <div class="form-group">
+        <label for="client">Müşteri:</label>
+        <input type="text" name="client" placeholder="Müşteri" required />
+      </div>
+      <div class="form-group">
+        <label for="camera">Kamera:</label>
+        <input type="text" name="camera" placeholder="Kamera" required />
+      </div>
+      <div class="form-group">
+        <label for="title">Başlık:</label>
+        <input type="text" id="title" name="title" placeholder="Başlık" required />
+      </div>
+      <div class="form-group">
+        <label for="subtitle">Alt Başlık:</label>
+        <input type="text" name="subtitle" placeholder="Alt Başlık" />
+      </div>
+      <div class="form-group">
+        <label for="description">Açıklama:</label>
+        <textarea type="text" rows="7" cols="50" name="description" placeholder="Açıklama" >
+
+        </textarea>
+      </div>
+      <div class="form-group">
+        <label for="location">Konum:</label>
+        <input type="text" name="location" placeholder="Konum" />
+      </div>
+      <div class="form-group">
+        <label for="city">Şehir:</label>
+        <input type="text" name="city" placeholder="Şehir" />
+      </div>
+      <div class="form-group">
+        <label for="photographer">Fotoğrafçı:</label>
+        <input type="text" name="photographer" placeholder="Fotoğrafçı" />
+      </div>
+      <div class="form-group">
+        <label for="category">Kategori:</label>
+        <select name="category" required>
+          <option value="">Kategori Seçin</option>
+          <option value="0">Portrait</option>
+          <option value="1">Landscape</option>
+          <option value="2">Food</option>
+          <option value="3">Nature</option>
+          <option value="4">Night</option>
+          <option value="5">Travel</option>
+          <option value="6">Street</option>
+          <option value="7">City and Architecture</option>
+          <option value="8">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="status">Durum:</label>
+        <select name="status" required>
+          <option value="0">Active</option>
+          <option value="1">Inactive</option>
+        </select>
+      </div>
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" id="homePage" /> Anasayfada Göster
+        </label>
+      </div>
+      <div class="form-group">
+        <button type="submit">Proje Yükle</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    async function fetchProjectIds() {
+      try {
+        const response = await fetch("/api/projects"); // Proje API URL'si
+        if (!response.ok) {
+          throw new Error("Proje ID'leri alınamadı");
+        }
+        const projects = await response.json();
+        const projectsIdSelect = document.getElementById("projectsId");
+
+        projects.forEach(project => {
+          const option = document.createElement("option");
+          option.value = project.id; // Proje ID'sini ayarla
+          option.textContent = project.title; // Proje başlığını göster
+          projectsIdSelect.appendChild(option); // Seçenekleri ekle
+        });
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    document.addEventListener("DOMContentLoaded", fetchProjectIds);
+    document.getElementById("uploadForm").addEventListener("submit", async function(event) {
+      event.preventDefault();
+
+      const formData = new FormData(this);
+  
+      const response = await fetch("/api/photo/upload", {
+        method: "POST",
+        body: formData
+      });
+
+      if (response.ok) {
+        const photo = await response.json();
+        console.log("Fotoğraf başarıyla yüklendi:", photo);
+        this.reset();
+      } else {
+        console.error("Fotoğraf yüklenemedi.");
+      }
+    });
+
+    function createSlug(title) {
+      return title
+        .toString()
+        .toLowerCase() // Küçük harflere çevir
+        .trim() // Baş ve sondaki boşlukları kaldır
+        .replace(/\s+/g, '-') // Boşlukları tire ile değiştir
+        .replace(/[^\w\-]+/g, '') // Özel karakterleri kaldır
+        .replace(/\-\-+/g, '-') // Çoklu tırnakları tek tırnağa çevir
+        .replace(/^-+/, '') // Baştaki tırnağı kaldır
+        .replace(/-+$/, ''); // Sondaki tırnağı kaldır
+    }
+
+    document.getElementById("uploadProject").addEventListener("submit", async function(event) {
+      event.preventDefault();
+
+      const formData = new FormData(this);
+      formData.append("slug", createSlug(document.getElementById("title").value));
+      formData.append("homePage", document.getElementById("homePage").checked);
+      const response = await fetch("/api/projects/upload", {
+        method: "POST",
+        body: formData
+      });
+
+      if (response.ok) {
+        const photo = await response.json();
+        console.log("Proje başarıyla yüklendi:", photo);
+        this.reset();
+      } else {
+        console.error("Proje yüklenemedi.");
+      }
+    });
+  </script>
+</body>
+</html>
