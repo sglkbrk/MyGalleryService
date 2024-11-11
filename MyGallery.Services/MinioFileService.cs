@@ -52,10 +52,11 @@ namespace MyGallery.Application.Services
                 using (var image = await Image.LoadAsync(file.OpenReadStream()))
                 {
                     // Font dosyasını yükleyin (örneğin "Arial.ttf" dosyasını projeye eklediniz)
-                    var fontPath = Path.Combine(_rootPath, "Arial.ttf"); // Font dosyasının yolu
-                    var fontCollection = new FontCollection();
-                    var fontFamily = fontCollection.Add(fontPath);
-                    var font = fontFamily.CreateFont(22); // Yazı tipi ve boyutu
+                    // var fontPath = Path.Combine(_rootPath, "Arial.ttf"); // Font dosyasının yolu
+                    // var fontCollection = new FontCollection();
+                    // var fontFamily = fontCollection.Add(fontPath);
+                    // var font = fontFamily.CreateFont(22); // Yazı tipi ve boyutu
+                    var font = SystemFonts.CreateFont("Arial", 20);
                     var color = Color.Gray; // Kırmızı renk
                     float horizontalSpacing = image.Width / 5; // Yazılar arasındaki yatay mesafe
                     float verticalSpacing = image.Height / 5; // Yazılar arasındaki dikey mesafe
