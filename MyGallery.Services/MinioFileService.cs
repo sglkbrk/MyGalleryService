@@ -15,11 +15,13 @@ namespace MyGallery.Application.Services
     public class MinioFileService : IMinioFileService
     {
         private readonly string _rootPath;
+        private readonly string _fontPath;
 
         public MinioFileService(IConfiguration configuration)
         {
             // Proje dizini içinde uploads klasörünü kullanın
             _rootPath = Path.Combine(Directory.GetCurrentDirectory(), "uploads");
+            _fontPath = Path.Combine(Directory.GetCurrentDirectory(), "fonts");
 
             // Klasör mevcut değilse oluştur
             if (!Directory.Exists(_rootPath))
@@ -52,11 +54,11 @@ namespace MyGallery.Application.Services
                 using (var image = await Image.LoadAsync(file.OpenReadStream()))
                 {
                     // Font dosyasını yükleyin (örneğin "Arial.ttf" dosyasını projeye eklediniz)
-                    // var fontPath = Path.Combine(_rootPath, "Arial.ttf"); // Font dosyasının yolu
-                    // var fontCollection = new FontCollection();
-                    // var fontFamily = fontCollection.Add(fontPath);
-                    // var font = fontFamily.CreateFont(22); // Yazı tipi ve boyutu
-                    var font = SystemFonts.CreateFont("Arial", 20);
+                    var fontPath = Path.Combine(_fontPath, "Arial.ttf"); // Font dosyasının yolu
+                    var fontCollection = new FontCollection();
+                    var fontFamily = fontCollection.Add(fontPath);
+                    var font = fontFamily.CreateFont(22); // Yazı tipi ve boyutu
+                    // var font = SystemFonts.CreateFont("DejaVu Sans", 20);
                     var color = Color.Gray; // Kırmızı renk
                     float horizontalSpacing = image.Width / 5; // Yazılar arasındaki yatay mesafe
                     float verticalSpacing = image.Height / 5; // Yazılar arasındaki dikey mesafe
