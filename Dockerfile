@@ -25,6 +25,8 @@ RUN dotnet publish "MyGallery.Api.csproj" -c Release -o /app/publish
 # Son olarak uygulamayı çalıştırmak için base image'e geçiş yapıyoruz
 FROM base AS final
 WORKDIR /app
+# Font dosyasını kopyalayın
+COPY MyGallery.Api/fonts/Arial.ttf /app/fonts/Arial.ttf
 COPY --from=build /src/MyGallery.Api/wwwroot ./wwwroot
 COPY --from=publish /app/publish .
 ENV ASPNETCORE_URLS http://*:5001
