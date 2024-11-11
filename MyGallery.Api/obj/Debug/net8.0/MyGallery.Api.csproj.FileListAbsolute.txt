@@ -166,3 +166,5 @@
 /Users/burak/Desktop/Project/MyGalleryService/MyGallery.Api/bin/Debug/net8.0/runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll
 /Users/burak/Desktop/Project/MyGalleryService/MyGallery.Api/bin/Debug/net8.0/SixLabors.ImageSharp.dll
 /Users/burak/Desktop/Project/MyGalleryService/MyGallery.Api/obj/Debug/net8.0/MyGallery.Api.sourcelink.json
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Api/bin/Debug/net8.0/SixLabors.Fonts.dll
+/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Api/bin/Debug/net8.0/SixLabors.ImageSharp.Drawing.dll

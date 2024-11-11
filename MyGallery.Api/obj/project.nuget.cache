@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CKjXgKXwQKw=",
+  "dgSpecHash": "8GyM647Ex6E=",
   "success": true,
   "projectFilePath": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Api/MyGallery.Api.csproj",
   "expectedPackageFiles": [
@@ -63,7 +63,9 @@
     "/Users/burak/.nuget/packages/mysql.entityframeworkcore/8.0.8/mysql.entityframeworkcore.8.0.8.nupkg.sha512",
     "/Users/burak/.nuget/packages/mysqlconnector/2.3.5/mysqlconnector.2.3.5.nupkg.sha512",
     "/Users/burak/.nuget/packages/pomelo.entityframeworkcore.mysql/8.0.2/pomelo.entityframeworkcore.mysql.8.0.2.nupkg.sha512",
+    "/Users/burak/.nuget/packages/sixlabors.fonts/2.0.6/sixlabors.fonts.2.0.6.nupkg.sha512",
     "/Users/burak/.nuget/packages/sixlabors.imagesharp/3.1.5/sixlabors.imagesharp.3.1.5.nupkg.sha512",
+    "/Users/burak/.nuget/packages/sixlabors.imagesharp.drawing/2.1.4/sixlabors.imagesharp.drawing.2.1.4.nupkg.sha512",
     "/Users/burak/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "/Users/burak/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "/Users/burak/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

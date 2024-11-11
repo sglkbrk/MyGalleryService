@@ -1179,6 +1179,19 @@
           }
         }
       },
+      "SixLabors.Fonts/2.0.6": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SixLabors.Fonts.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SixLabors.Fonts.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SixLabors.ImageSharp/3.1.5": {
         "type": "package",
         "compile": {
@@ -1193,6 +1206,23 @@
         },
         "build": {
           "build/SixLabors.ImageSharp.props": {}
+        }
+      },
+      "SixLabors.ImageSharp.Drawing/2.1.4": {
+        "type": "package",
+        "dependencies": {
+          "SixLabors.Fonts": "2.0.4",
+          "SixLabors.ImageSharp": "3.1.5"
+        },
+        "compile": {
+          "lib/net6.0/SixLabors.ImageSharp.Drawing.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.Drawing.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Swashbuckle.AspNetCore/6.4.0": {
@@ -2008,7 +2038,11 @@
           "AWSSDK.S3": "3.7.405.7",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "MyGallery.Data": "1.0.0",
-          "MyGallery.Domain": "1.0.0"
+          "MyGallery.Domain": "1.0.0",
+          "SixLabors.Fonts": "2.0.6",
+          "SixLabors.ImageSharp": "3.1.5",
+          "SixLabors.ImageSharp.Drawing": "2.1.4",
+          "System.Drawing.Common": "8.0.10"
         },
         "compile": {
           "bin/placeholder/MyGallery.Services.dll": {}
@@ -4016,6 +4050,21 @@
         "pomelo.entityframeworkcore.mysql.nuspec"
       ]
     },
+    "SixLabors.Fonts/2.0.6": {
+      "sha512": "02gEMS7dIEwI7ktd4xVilXoyPu62iK47DYoeYVrENYUthiR337svvjC9QnZiNgw5NgAxAyOjtMkzTK4mCpURNw==",
+      "type": "package",
+      "path": "sixlabors.fonts/2.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/SixLabors.Fonts.dll",
+        "lib/net6.0/SixLabors.Fonts.xml",
+        "sixlabors.fonts.128.png",
+        "sixlabors.fonts.2.0.6.nupkg.sha512",
+        "sixlabors.fonts.nuspec"
+      ]
+    },
     "SixLabors.ImageSharp/3.1.5": {
       "sha512": "lNtlq7dSI/QEbYey+A0xn48z5w4XHSffF8222cC4F4YwTXfEImuiBavQcWjr49LThT/pRmtWJRcqA/PlL+eJ6g==",
       "type": "package",
@@ -4030,6 +4079,21 @@
         "sixlabors.imagesharp.128.png",
         "sixlabors.imagesharp.3.1.5.nupkg.sha512",
         "sixlabors.imagesharp.nuspec"
+      ]
+    },
+    "SixLabors.ImageSharp.Drawing/2.1.4": {
+      "sha512": "p4VwtAABggDUhUS5zXldCZHVGfjJl76+SrBHY4biNQ8+890igFK6RL87qIv9GqvEjMcYOar1sPkf2iMQ6uq9/g==",
+      "type": "package",
+      "path": "sixlabors.imagesharp.drawing/2.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/SixLabors.ImageSharp.Drawing.dll",
+        "lib/net6.0/SixLabors.ImageSharp.Drawing.xml",
+        "sixlabors.imagesharp.drawing.128.png",
+        "sixlabors.imagesharp.drawing.2.1.4.nupkg.sha512",
+        "sixlabors.imagesharp.drawing.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore/6.4.0": {
