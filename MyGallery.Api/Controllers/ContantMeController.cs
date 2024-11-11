@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using MyGallery.Domain;
 using MyGallery.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MyGallery.Api.Controllers
 {
@@ -17,6 +18,7 @@ namespace MyGallery.Api.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<ContantMe>>> GetaAllContantMe()
         {
             return Ok(await _contantMeService.GetAllAsync());
@@ -26,10 +28,11 @@ namespace MyGallery.Api.Controllers
         public async Task<ActionResult<ContantMe>> PostContantMeItem(ContantMe item)
         {
             await _contantMeService.AddAsync(item);
-            return CreatedAtAction(nameof(_contantMeService), new { id = item.Id }, item);
+            return Ok();
         }
 
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<ActionResult<ContantMe>> GetContantMeItem(int id)
         {
             var item = await _contantMeService.GetByIdAsync(id);

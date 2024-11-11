@@ -2,3 +2,4 @@ docker-compose.yaml
 uploads
 ./docker-compose.yaml
 ./uploads
+appsettings.json

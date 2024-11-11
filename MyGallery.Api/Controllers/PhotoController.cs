@@ -7,6 +7,7 @@ using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp.Processing;
 using SixLabors.ImageSharp.Formats.Jpeg;
+using Microsoft.AspNetCore.Authorization;
 
 
 namespace MyGallery.Api.Controllers
@@ -49,6 +50,7 @@ namespace MyGallery.Api.Controllers
         }
 
         [HttpPost("upload")]
+        [Authorize]
         public async Task<IActionResult> UploadPhoto([FromForm] IFormFile file, [FromForm] Photo photo)
         {
             if (file == null || file.Length == 0)
