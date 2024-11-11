@@ -57,23 +57,41 @@ namespace MyGallery.Application.Services
                     var fontPath = Path.Combine(_fontPath, "Arial.ttf"); // Font dosyasının yolu
                     var fontCollection = new FontCollection();
                     var fontFamily = fontCollection.Add(fontPath);
-                    var font = fontFamily.CreateFont(22); // Yazı tipi ve boyutu
+                    var font = fontFamily.CreateFont(20); // Yazı tipi ve boyutu
                     // var font = SystemFonts.CreateFont("DejaVu Sans", 20);
-                    var color = Color.Gray; // Kırmızı renk
-                    float horizontalSpacing = image.Width / 5; // Yazılar arasındaki yatay mesafe
-                    float verticalSpacing = image.Height / 5; // Yazılar arasındaki dikey mesafe
-                    float startX = image.Width / 5 / 2; // Yazıların başlangıç X konumu
-                    float startY = image.Width / 5 / 2;
-                    int counter = 1; // Yazı numarası (1'den 9'a kadar)
-                    for (int row = 0; row < 5; row++) // 3 satır
+                    // var color = Color.Gray; // Kırmızı renk
+                    // float horizontalSpacing = image.Width / 3; // Yazılar arasındaki yatay mesafe
+                    // float verticalSpacing = image.Height / 3; // Yazılar arasındaki dikey mesafe
+                    // float startX = image.Width / 3 / 2; // Yazıların başlangıç X konumu
+                    // float startY = image.Width / 3 / 2;
+                    // int counter = 1; // Yazı numarası (1'den 9'a kadar)
+                    // for (int row = 0; row < 3; row++) // 3 satır
+                    // {
+                    //     for (int col = 0; col < 3; col++) // 3 sütun
+                    //     {
+                    //         var position = new PointF(startX + col * horizontalSpacing, startY + row * verticalSpacing);
+                    //         image.Mutate(ctx => { ctx.DrawText("Bsgallery", font, color, position); });
+                    //         counter++;
+                    //     }
+                    // }
+                    var color = Color.Gray; // Yazı rengi
+                    var random = new Random(); // Rastgele sayı üretici
+                    float maxX = image.Width - 100; // Yazının maksimum X konumu (resmin genişliği - yazı genişliği)
+                    float maxY = image.Height - 30; // Yazının maksimum Y konumu (resmin yüksekliği - yazı yüksekliği)
+                    for (int i = 0; i < 9; i++) // 9 yazı
                     {
-                        for (int col = 0; col < 5; col++) // 3 sütun
-                        {
-                            var position = new PointF(startX + col * horizontalSpacing, startY + row * verticalSpacing);
-                            image.Mutate(ctx => { ctx.DrawText("Bsgallery", font, color, position); });
-                            counter++;
-                        }
+                        // Rastgele X ve Y koordinatlarını oluştur
+                        float randomX = random.Next(0, (int)maxX);
+                        float randomY = random.Next(0, (int)maxY);
+
+                        var position = new PointF(randomX, randomY); // Rastgele konum
+
+                        // Resmin üzerine yazıyı çiz
+                        image.Mutate(ctx => { ctx.DrawText($"Bsgallery", font, color, position); });
+
+
                     }
+
                     await image.SaveAsync(filePath);
                 }
             }
