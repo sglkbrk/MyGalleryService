@@ -60,7 +60,7 @@ namespace MyGallery.Data.Repositories
             {
                 project.Photos = await _context.Photos
                     .Where(photo => photo.ProjectsId == project.Id && photo.Format == format)
-                    .Take(5)
+                    // .Take(5)
                     .ToListAsync();
             }
             return project;

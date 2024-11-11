@@ -11,5 +11,6 @@ namespace MyGallery.Data
         public DbSet<Projects> Projects { get; set; }
         public DbSet<Photo> Photos { get; set; }
         public DbSet<PhotoCaptions> PhotoCaptions { get; set; }
+        public DbSet<ContantMe> ContantMe { get; set; }
     }
 }

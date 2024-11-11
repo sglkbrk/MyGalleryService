@@ -31,6 +31,9 @@ namespace MyGallery.API.Controllers
         {
             var stream = await _minioFileService.GetFileAsync(key);
             // İçerik tipini belirlemek için dosya uzantısına göre ayarlayabilirsiniz
+            Response.Headers["Cache-Control"] = "public,max-age=2592000"; // 1 gün
+            Response.Headers["Expires"] = DateTime.UtcNow.AddMonths(1).ToString("R"); // 1 gün sonra
+            Response.Headers["ETag"] = Convert.ToBase64String(Guid.NewGuid().ToByteArray());
             return File(stream, "application/octet-stream", key);
         }
 

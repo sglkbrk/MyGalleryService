@@ -26,7 +26,21 @@ builder.Services.AddScoped<IProjectsService, ProjectsService>();
 builder.Services.AddScoped<IPhotoRepository, PhotoRepository>();
 builder.Services.AddScoped<IPhotoService, PhotoService>();
 builder.Services.AddScoped<IMinioFileService, MinioFileService>();
+builder.Services.AddScoped<IContantMeRepository, ContantMeRepository>();
+builder.Services.AddScoped<IContantMeService, ContantMeService>();
+
 builder.Services.AddControllers();
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.WithOrigins("http://localhost:3000")
+             .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials(); // Geliştirme ortamında herhangi bir origin'e izin verebilirsiniz.
+    });
+});
+
 // builder.Services.AddControllers().AddJsonOptions(options =>
 // {
 //     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
@@ -54,7 +68,7 @@ app.UseEndpoints(endpoints =>
 
 app.UseHttpsRedirection();
 // API'yi yapılandırın
-
+app.UseCors();
 // Middleware ayarları
 app.UseAuthorization();
 app.MapControllers();
