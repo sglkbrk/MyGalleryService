@@ -86,13 +86,18 @@ namespace MyGallery.Services
         {
             return await _projectsRepository.GetProjectAllPhotosAsync(slug, format);
         }
-        private void ClearCache()
+        public void ClearCache()
         {
             foreach (var key in _cacheKeys)
             {
                 _cache.Remove(key); // Her bir anahtarı temizliyoruz
             }
             _cacheKeys.Clear(); // Anahtarları listeyi sıfırlıyoruz
+        }
+        public void ClearCache(string slug)
+        {
+            string cacheKey = $"PostProjects_{slug}";
+            _cache.Remove(cacheKey);
         }
 
     }

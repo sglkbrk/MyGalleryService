@@ -100,6 +100,20 @@ namespace MyGallery.Api.Controllers
 
             return Ok(projects);
         }
+
+        [HttpGet("ClearCache")]
+        public IActionResult ClearCache()
+        {
+            _projectsService.ClearCache();
+            return Ok();
+        }
+
+        [HttpGet("ClearCache/{slug}")]
+        public IActionResult ClearCache(string slug)
+        {
+            _projectsService.ClearCache(slug);
+            return Ok();
+        }
         private async Task<IFormFile> CompressPhoto(IFormFile file)
         {
             // Orijinal fotoğrafı oku
