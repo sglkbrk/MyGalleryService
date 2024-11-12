@@ -7,6 +7,8 @@ async function fetchProjectIds() {
     }
     const projects = await response.json();
     const projectsIdSelect = document.getElementById("projectsId");
+    const projectsIdSelect_1 = document.getElementById("projectsId_1");
+    
 
     projects.forEach(project => {
         const option = document.createElement("option");
@@ -14,6 +16,13 @@ async function fetchProjectIds() {
         option.textContent = project.title; // Proje başlığını göster
         projectsIdSelect.appendChild(option); // Seçenekleri ekle
     });
+    projects.forEach(project => {
+      const option = document.createElement("option");
+      option.value = project.id; // Proje ID'sini ayarla
+      option.textContent = project.title; // Proje başlığını göster
+      projectsIdSelect_1.appendChild(option); // Seçenekleri ekle
+  });
+    
     } catch (error) {
     console.error(error);
     }
@@ -155,7 +164,37 @@ function showTab(tabId) {
       tableBody.appendChild(row);
     });
   }
+  function clearHomeCache() {
+    clearCache()
+  }
+  function clearPostCache() {
+    var projectsId = document.getElementById("projectsId_1").value
+    if(projectsId) clearCache(projectsId)
+  }
+  async function clearCache(projectsId) {
+      try {
+        const username = getloginParams()[0]; // Kullanıcı adınızı buraya girin
+        const password =  getloginParams()[1];  // Şifrenizi buraya girin
+        const credentials = btoa(`${username}:${password}`); // Kullanıcı adı ve şifreyi Base64 ile kodla
+        
+        const response = await fetch("/api/Projects/ClearCache" + (projectsId ? "/" + projectsId : ""),  {
+            method: "GET",
+            headers: {
+                "Authorization": `Basic ${credentials}`, // Authorization başlığına ekle
+                "Content-Type": "application/json"
+            }
+        });
 
+        if (!response.ok) {
+            throw new Error("Proje ID'leri alınamadı");
+        }
+
+        const items = await response.json();
+        populateContactTable(items); // Verileri tabloya doldurma fonksiyonunuz
+    } catch (error) {
+      
+    }
+  }
   // Populate the table on page load
   window.onload = populateContactTable;
   window.onload = document.getElementById("username").value = localStorage.getItem("login");

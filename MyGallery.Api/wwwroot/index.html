@@ -17,6 +17,7 @@
     <button class="tab-button active" onclick="showTab('uploadTab')">Fotoğraf Yükleme</button>
     <button class="tab-button" onclick="showTab('uploadProjectTab')">Proje Yükleme</button>
     <button class="tab-button" onclick="showTab('contactTab')">Contact Me</button>
+    <button class="tab-button" onclick="showTab('Settings')">Settings</button>
   </div>
 
   <!-- Tab Contents -->
@@ -172,6 +173,19 @@
         <!-- Data will be populated dynamically from JavaScript -->
       </tbody>
     </table>
+  </div>
+  <div id="Settings" class="tab-content">
+    <div class="form-group">
+      <button  style="background-color: brown;" onclick="clearHomeCache()" id="logout">Clear Home Cache</button>
+    </div>
+    <div class="form-group">
+      <label >Proje ID:</label>
+      <select name="projectsId_1" id="projectsId_1" required>
+        <option value="">Proje ID Seçin</option>
+        <!-- Proje ID'leri buraya eklenecek -->
+      </select>
+      <button style="margin-top: 5px; background-color: brown;" onclick="clearPostCache()" id="logout">Clear Post Cache</button>
+    </div>
   </div>
 
   <script src="script.js"></script>

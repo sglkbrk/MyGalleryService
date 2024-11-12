@@ -102,6 +102,7 @@ namespace MyGallery.Api.Controllers
         }
 
         [HttpGet("ClearCache")]
+        [Authorize]
         public IActionResult ClearCache()
         {
             _projectsService.ClearCache();
@@ -109,6 +110,7 @@ namespace MyGallery.Api.Controllers
         }
 
         [HttpGet("ClearCache/{slug}")]
+        [Authorize]
         public IActionResult ClearCache(string slug)
         {
             _projectsService.ClearCache(slug);
