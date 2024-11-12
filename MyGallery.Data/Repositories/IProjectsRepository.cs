@@ -13,6 +13,7 @@ namespace MyGallery.Data.Repositories
         Task<IEnumerable<Projects>> GetRecentProject(int count);
         Task<IEnumerable<Projects>> GetHomeProject(int count);
         Task<Projects> GetProjectAllPhotosAsync(string slug, Format format);
+        Task<List<string>> GetAllSlugsAsync();
 
 
 

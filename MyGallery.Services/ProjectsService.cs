@@ -86,6 +86,22 @@ namespace MyGallery.Services
         {
             return await _projectsRepository.GetProjectAllPhotosAsync(slug, format);
         }
+
+        public async Task<List<string>> GetAllSlugsAsync()
+        {
+            string cacheKey = $"Projects_slugs";
+            if (_cache.TryGetValue(cacheKey, out List<string> slugs))
+            {
+                return slugs;
+            }
+            slugs = await _projectsRepository.GetAllSlugsAsync();
+            var cacheOptions = new MemoryCacheEntryOptions()
+                .SetAbsoluteExpiration(TimeSpan.FromDays(20)); // 1 gün boyunca cache'de sakla
+            _cache.Set(cacheKey, slugs, cacheOptions);
+            _cacheKeys.Add(cacheKey);
+            return slugs;
+
+        }
         public void ClearCache()
         {
             foreach (var key in _cacheKeys)
@@ -99,6 +115,8 @@ namespace MyGallery.Services
             string cacheKey = $"PostProjects_{slug}";
             _cache.Remove(cacheKey);
         }
+
+
 
     }
 }

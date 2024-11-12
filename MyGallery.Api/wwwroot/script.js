@@ -18,7 +18,7 @@ async function fetchProjectIds() {
     });
     projects.forEach(project => {
       const option = document.createElement("option");
-      option.value = project.id; // Proje ID'sini ayarla
+      option.value = project.slug; // Proje ID'sini ayarla
       option.textContent = project.title; // Proje başlığını göster
       projectsIdSelect_1.appendChild(option); // Seçenekleri ekle
   });

@@ -116,6 +116,11 @@ namespace MyGallery.Api.Controllers
             _projectsService.ClearCache(slug);
             return Ok();
         }
+        [HttpGet("slugs")]
+        public Task<List<string>> GetAllSlugsAsync()
+        {
+            return _projectsService.GetAllSlugsAsync();
+        }
         private async Task<IFormFile> CompressPhoto(IFormFile file)
         {
             // Orijinal fotoğrafı oku

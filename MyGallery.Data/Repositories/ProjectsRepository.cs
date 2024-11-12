@@ -81,6 +81,14 @@ namespace MyGallery.Data.Repositories
                 .ToListAsync();
         }
 
+        public async Task<List<string>> GetAllSlugsAsync()
+        {
+            return await _context.Projects
+               .OrderByDescending(p => p.CreatedAt)
+               .Select(p => p.Slug)
+               .ToListAsync();
+        }
+
         public async Task AddAsync(Projects item)
         {
             await _context.Projects.AddAsync(item);

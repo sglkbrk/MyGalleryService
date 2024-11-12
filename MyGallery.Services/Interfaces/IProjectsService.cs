@@ -14,7 +14,11 @@ namespace MyGallery.Services.Interfaces
         Task<IEnumerable<Projects>> GetRecentProject(int count);
         Task<IEnumerable<Projects>> GetHomeProject(int count);
         Task<Projects> GetProjectAllPhotosAsync(string slug, Format format);
+
+        Task<List<string>> GetAllSlugsAsync();
         void ClearCache();
         void ClearCache(string slug);
+
+
     }
 }
