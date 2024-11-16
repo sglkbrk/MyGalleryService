@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "WyeJcwIpke4=",
+  "dgSpecHash": "k6pub8Fa7jA=",
   "success": true,
   "projectFilePath": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Domain/MyGallery.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/burak/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/burak/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xzBymhbXx9o=",
+  "dgSpecHash": "u8KW7ePAs50=",
   "success": true,
   "projectFilePath": "/Users/burak/Desktop/Project/MyGalleryService/MyGallery.Services/MyGallery.Services.csproj",
   "expectedPackageFiles": [
@@ -28,7 +28,20 @@
     "/Users/burak/.nuget/packages/sixlabors.imagesharp/3.1.5/sixlabors.imagesharp.3.1.5.nupkg.sha512",
     "/Users/burak/.nuget/packages/sixlabors.imagesharp.drawing/2.1.4/sixlabors.imagesharp.drawing.2.1.4.nupkg.sha512",
     "/Users/burak/.nuget/packages/system.drawing.common/8.0.10/system.drawing.common.8.0.10.nupkg.sha512",
-    "/Users/burak/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512"
+    "/Users/burak/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512",
+    "/Users/burak/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/burak/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1904",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Text.Encodings.Web' 4.5.0 has a known critical severity vulnerability, https://github.com/advisories/GHSA-ghhp-997w-qr28",
+      "libraryId": "System.Text.Encodings.Web",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
