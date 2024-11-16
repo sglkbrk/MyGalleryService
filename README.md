@@ -42,7 +42,6 @@ The API documentation for **MyGalleryService** is available via [Swagger](https:
 - **Database Integration**: Uses Entity Framework Core to interact with MySQL or SQL Server databases.
 - **API Documentation**: Exposes a full Swagger UI for easy exploration of API endpoints.
 - **Image Resizing**: Resize and process images dynamically using ImageSharp.
-- **Cloud Integration**: Images can be stored and retrieved from AWS S3 for scalable cloud storage.
 - **Test Coverage**: Includes unit tests for various service layers, using xUnit and Coverlet for code coverage.
 
 ## 🛠 Installation
@@ -69,18 +68,16 @@ To get started with this project, follow these steps:
 
 4. Configure the Database
 
-You need to configure your database connection string in the `appsettings.json` file.
+   You need to configure your database connection string in the `appsettings.json` file.
 
-The connection string specifies the details for connecting to your database.
+   The connection string specifies the details for connecting to your database.
 
-#### Example (`appsettings.json`):
+   #### Example (`appsettings.json`):
 
-json
-{
-"ConnectionStrings": {
-"MyGalleryDb": "server=localhost;database=mygallery;user=myuser;password=mypassword;"
-}
-}
+   json
+   {
+   "ConnectionStrings": {"MyGalleryDb": "server=localhost;database=mygallery;user=myuser;password=mypassword;"}
+   }
 
 5. Build and Run the Service
 
